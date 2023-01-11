@@ -1,4 +1,9 @@
 import Head from "next/head";
+import Contact from "../components/Sections/Contact";
+import News from "../components/Sections/News";
+import Student from "../components/Sections/Student";
+
+
 
 export default function Home() {
   return (
@@ -9,9 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-3xl font-bold underline text-red-600">
-        Visit Rwanda!
-      </h1>
+      <News />
+      <Student />
+     <Contact />
     </>
   );
 }
