@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Logo from "../../public/assets/vectors/logo-en.svg";
 import Logos from "../../public/assets/vectors/logo-inverted-en.svg";
+import Search from "../../public/assets/vectors/sear.svg";
+import Cross from "../../public/assets/vectors/cross.svg";
+import ChevronDown from "../../public/assets/vectors/chevron-down-solid.svg";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -52,15 +55,9 @@ const Navbar = () => {
               <div className="grid grid-cols-3 gap-4">
                 <div>
                   <FontAwesomeIcon icon={faLanguage} />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#333"
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
-                  </svg>
+                  <div>
+                  <Image src={ChevronDown} alt="chevrondown" className="w-5" />
+                  </div>
                 </div>
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -76,41 +73,132 @@ const Navbar = () => {
         </div>
       </nav>
       {show && (
-        <div className="h-screen bg-[#333333] bg-opacity-90 text-white -mt-[165px]">
-          <div className="flex items-center bg-[#333333] justify-between px-[5.625rem] py-10">
-            <div className="flex items-center gap-2">
+        <div className="h-screen bg-[#171616] bg-opacity-90 text-white -mt-[10.3rem]">
+          <div className="flex items-center bg-black justify-between px-[5.625rem] py-10">
+            <div>
+              <Image src={Logos} width={400} />
+            </div>
+            <div className="flex items-center gap-8">
               <span>
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
-                  </svg>
-                </div>
+                <Image src={Search} width={20} height={20} />
               </span>
               <span onClick={() => setShow(!show)}>
-                <Image src={Logo} alt="Logo" className="w-56" />
+                <Image src={Cross} width={20} height={20} />
               </span>
             </div>
           </div>
           <div className="pt-10">
             <div className="flex flex-col gap-5 text-lg text-white px-[5.625rem]">
-              {["home", "about", "contact", "blog", "pages", "More"].map(
-                (item, i) => {
-                  return (
-                    <>
-                      <span className="border-b-2 border-dashed p-2 hover:bg-[#00bcff]">
-                        <Link
-                          href={item}
-                          key={i}
-                          className="flex justify-between"
+            
+              {/* //   "All study programs",
+              //   "Starting out",
+              //   "Study organization",
+              //   "Examination organization",
+              //   "Digital Servcises",
+              //   "More...", */}
+             
+              
+                  <>
+                    <span className="border-b  p-2 hover:bg-[#00bcff]">
+                      <Link
+                        href="/program"
+                    
+                        className="flex justify-between"
+                      >
+                        <span>All study programs</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 20 20"
                         >
-                          <span>{item}</span>
-                          <span>icon</span>
-                        </Link>
-                      </span>
-                    </>
-                  );
-                }
-              )}
+                          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+                        </svg>
+                      </Link>
+                    </span>
+                  </>
+                  <>
+                    <span className="border-b  p-2 hover:bg-[#00bcff]">
+                      <Link
+                        href="/starting"
+                    
+                        className="flex justify-between"
+                      >
+                        <span>Starting out</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+                        </svg>
+                      </Link>
+                    </span>
+                  </>
+                  <>
+                    <span className="border-b  p-2 hover:bg-[#00bcff]">
+                      <Link
+                        href={"/"}
+                    
+                        className="flex justify-between"
+                      >
+                        <span>Starting out</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+                        </svg>
+                      </Link>
+                    </span>
+                  </>
+                  <>
+                    <span className="border-b  p-2 hover:bg-[#00bcff]">
+                      <Link
+                        href={"/"}
+                    
+                        className="flex justify-between"
+                      >
+                        <span>All study programs</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+                        </svg>
+                      </Link>
+                    </span>
+                  </>
+                  <>
+                    <span className="border-b  p-2 hover:bg-[#00bcff]">
+                      <Link
+                        href={"/"}
+                    
+                        className="flex justify-between"
+                      >
+                        <span>All study programs</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+                        </svg>
+                      </Link>
+                    </span>
+                  </>
+               
             </div>
           </div>
         </div>
