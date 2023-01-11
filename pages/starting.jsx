@@ -1,5 +1,5 @@
 export default function starting() {
   return (
-    <div>starting page</div>
+    <div className="h-screen flex flex-col justify-center items-center font-bold text-5xl">Starting Page</div>
   )
 }
