@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    body {
+      @apply bg-[#DDDDDD] relative;
+    }
+  } */
+
+@font-face {
+  font-family: "Univers";
+  src: url("https://www.uni-stuttgart.de/system/modules/de.stuttgart.uni.v3.basics/resources/fonts/univers/db1e9a24-d371-4686-ba25-77b32a84e0db.woff2");
+}
+
+@font-face {
+  font-family: "UniversOne";
+  src: url("https://www.uni-stuttgart.de/system/modules/de.stuttgart.uni.v3.basics/resources/fonts/univers/73d8af9e-4b82-4953-81a5-8941aed30297.woff2");
+}
+
+@font-face {
+  font-family: "UniversTwo";
+  src: url("https://www.uni-stuttgart.de/system/modules/de.stuttgart.uni.v3.basics/resources/fonts/univers/50f62374-c967-49bb-8dba-0c8b7f7b50cf.woff2");
+}
