@@ -12,7 +12,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 const News = () => {
   return (
     <Wrapper>
-      <div className="bg-[#00BEFF] text-black">
+      <div className="bg-[#00BEFF] text-black pt-52">
         <div className="max-w-[960px] mx-auto pt-20">
           <div className="flex gap-2">
             <div>
@@ -25,7 +25,7 @@ const News = () => {
                 studies.
               </p>
             </div>
-            <div className="bg-black relative  -mb-10 relative z-50 text-white rounded-full w-[380px] h-[270px] flex flex-col items-center justify-center">
+            <div className="bg-black -mb-10 relative z-50 text-white rounded-full w-[380px] h-[270px] flex flex-col items-center justify-center">
               <p className="text-[14px] w-48">
                 INFORMATION FOR PROSPECTIVE STUDENTS
               </p>

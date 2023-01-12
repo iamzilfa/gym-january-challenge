@@ -27,6 +27,7 @@ const Footer = () => {
             <div>
               <Image src={Logo} alt="Logo" className="w-56" />
             </div>
+          
             <div className="grid grid-cols-7 gap-3">
               <div className="flex flex-col items-center space-y-1">
                 <div className="border rounded-full w-[60px] h-[60px] flex flex-col items-center justify-center">
