@@ -22,3 +22,7 @@
   font-family: "UniversTwo";
   src: url("https://www.uni-stuttgart.de/system/modules/de.stuttgart.uni.v3.basics/resources/fonts/univers/50f62374-c967-49bb-8dba-0c8b7f7b50cf.woff2");
 }
+
+.instaa:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
